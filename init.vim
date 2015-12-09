@@ -9,8 +9,11 @@
 
 
 " General {
-    set shiftwidth=4	" Use indents of 4 spaces
+    set tabstop=4       " Number of spaces that a <tab> represents in a file
+    set shiftwidth=4    " Use indents of 4 spaces
     set expandtab       " Tabs are spaces, not tabs
+    set softtabstop=4   " Number of spaces that a <tab> represents
+    " set smarttab
     set cursorline      " Highlight current line
     set nu              " Line numbers on
     set backspace=indent,eol,start      " Backspace for dummies
