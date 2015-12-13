@@ -11,6 +11,6 @@ if [ ! -d $NEOVIM_PLUGGED_PATH ]; then
 fi
 
 # Link neovim config
-ln -s $(pwd)/init.vim  $NEOVIM_PLUGGED_PATH"/init.vim"
+ln -s $(pwd)/init.vim  $NEOVIM_PATH"/init.vim"
 
 

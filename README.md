@@ -14,4 +14,5 @@
     installation: need python3, and pip3 install neovim.
 
 
-
+# Start nvim and run:
+    :UpdateRemotePlugins
