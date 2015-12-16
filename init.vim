@@ -40,6 +40,8 @@
     " Programming
     Plug 'scrooloose/syntastic'
     Plug 'fatih/vim-go'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-fugitive'
 
     call plug#end()
     " End plug
