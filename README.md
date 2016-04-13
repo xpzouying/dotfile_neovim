@@ -16,3 +16,10 @@
 
 # Start nvim and run:
     :UpdateRemotePlugins
+
+
+
+##### Others
+1. gruvbox true color. Add following in .zshrc/.bashrc.
+    source ~/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
+

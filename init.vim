@@ -55,13 +55,15 @@
     " gruvbox {
         colorscheme gruvbox
         set background=dark     " default is light
+        " let g:gruvbox_termcolor=16    " default is 256
+        let g:gruvbox_italic=1
         let g:gruvbox_bold=1
     " }
 
 
     " vim-airline {
         set laststatus=2
-        let g:airline_theme='wombat'
+        let g:airline_theme='gruvbox'
         let g:airline#extensions#branch#enabled=1
         " let g:airline#extension#syntastic#enabled=1
         let g:airline_powerline_fonts=1
@@ -93,8 +95,8 @@
     let mapleader=","
 
     " Move to the next & previous buffer
-    nmap <leader>l :bnext<CR>
-    nmap <leader>h :bprevious<CR>
+    nmap <F2> :bprevious<CR>
+    nmap <F3> :bnext<CR>
 
 
 " }
