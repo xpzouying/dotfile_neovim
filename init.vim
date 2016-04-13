@@ -30,7 +30,9 @@
 
     " Feel & Look
     Plug 'morhetz/gruvbox'
-    Plug 'bling/vim-airline'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+
     Plug 'scrooloose/nerdtree'
 
 
