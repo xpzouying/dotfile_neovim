@@ -13,6 +13,13 @@
 # deoplete:
     installation: need python3, and pip3 install neovim.
 
+# deoplete-go:
+    pip2 install --upgrade neovim
+    pip3 install --upgrade neovim
+
+    go get -u github.com/nsf/gocode
+
+
 
 # Start nvim and run:
     :UpdateRemotePlugins

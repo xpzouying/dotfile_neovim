@@ -22,6 +22,14 @@
 " }
 
 
+" Programming {
+    " Path to python interpreter for neovim
+    let g:python3_host_prog = '/usr/local/bin/python3'
+    " Skip the check of neovim module
+    let g:python3_host_skip_check = 1
+
+" }
+
 
 " Plugin - vim-plug{
     " Begin section
@@ -44,6 +52,7 @@
     Plug 'fatih/vim-go'
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
+    Plug 'zchee/deoplete-go', { 'do': 'make'}
 
     call plug#end()
     " End plug
@@ -85,6 +94,13 @@
 
     " deoplete.nvim {
         let g:deoplete#enable_at_startup=1
+        
+        set completeopt+=noselect
+    " }
+
+    " deoplete-go settings {
+        let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+        let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
     " }
 
 " }
