@@ -9,6 +9,7 @@
 
 
 " General {
+    set encoding=utf-8  " UTF8
     set tabstop=4       " Number of spaces that a <tab> represents in a file
     set shiftwidth=4    " Use indents of 4 spaces
     set expandtab       " Tabs are spaces, not tabs
@@ -19,14 +20,18 @@
     set backspace=indent,eol,start      " Backspace for dummies
     set ignorecase
     set smartcase
+
+    " With system clipboard
+    set clipboard=unnamed
 " }
 
 
 " Programming {
     " Path to python interpreter for neovim
-    let g:python3_host_prog = '/usr/local/bin/python3'
+    " let g:python3_host_prog = '/usr/local/bin/python3'
     " Skip the check of neovim module
-    let g:python3_host_skip_check = 1
+    " let g:python_host_skip_check = 1
+    " let g:python3_host_skip_check = 1
 
 " }
 
@@ -53,6 +58,8 @@
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'zchee/deoplete-go', { 'do': 'make'}
+    " Python
+    Plug 'davidhalter/jedi-vim'
 
     call plug#end()
     " End plug
