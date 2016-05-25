@@ -9,7 +9,7 @@
 
 
 " General {
-    set encoding=utf-8  " UTF8
+    " set encoding=utf-8  " UTF8
     set tabstop=4       " Number of spaces that a <tab> represents in a file
     set shiftwidth=4    " Use indents of 4 spaces
     set expandtab       " Tabs are spaces, not tabs
@@ -63,6 +63,9 @@
     " Plugs for everthing
     Plug 'Shougo/deoplete.nvim'
     Plug 'easymotion/vim-easymotion'
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf.vim'
+
 
     " Programming
     Plug 'scrooloose/syntastic'
@@ -113,7 +116,7 @@
 
     " deoplete.nvim {
         let g:deoplete#enable_at_startup=1
-        
+
         set completeopt+=noselect
     " }
 
@@ -138,6 +141,38 @@
         " Move to word
         map  <Leader>w <Plug>(easymotion-bd-w)
         nmap <Leader>w <Plug>(easymotion-overwin-w)
+    " }
+
+    " { fzf: Fuzzy file finder
+        nnoremap <c-p> :FZF<cr>
+
+        " This is the default extra key bindings
+        let g:fzf_action = {
+                    \ 'ctrl-t': 'tab split',
+                    \ 'ctrl-x': 'split',
+                    \ 'ctrl-v': 'vsplit' }
+
+        " Default fzf layout
+        " - down / up / left / right
+        " - window (nvim only)
+        " let g:fzf_layout = { 'down': '~40%' }
+
+
+        " Customize fzf colors to match your color scheme
+        let g:fzf_colors =
+                    \ { 'fg':      ['fg', 'Normal'],
+                    \ 'bg':      ['bg', 'Normal'],
+                    \ 'hl':      ['fg', 'Comment'],
+                    \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+                    \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+                    \ 'hl+':     ['fg', 'Statement'],
+                    \ 'info':    ['fg', 'PreProc'],
+                    \ 'prompt':  ['fg', 'Conditional'],
+                    \ 'pointer': ['fg', 'Exception'],
+                    \ 'marker':  ['fg', 'Keyword'],
+                    \ 'spinner': ['fg', 'Label'],
+                    \ 'header':  ['fg', 'Comment'] }
+
     " }
 
 
