@@ -22,7 +22,7 @@
     set smartcase
 
     " With system clipboard
-    set clipboard=unnamed
+    " set clipboard=unnamedplus
 " }
 
 
