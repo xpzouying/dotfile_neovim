@@ -187,5 +187,28 @@
         let g:syntastic_check_on_wq = 0
     " }
 
+    " {
+        " By default syntax-highlighting for Functions,
+        " Methods and Structs is disabled.
+        " To change it:
+        let g:go_highlight_functions = 1
+        let g:go_highlight_methods = 1
+        let g:go_highlight_structs = 1
+        let g:go_highlight_interfaces = 1
+        let g:go_highlight_operators = 1
+        let g:go_highlight_build_constraints = 1
+
+        " Enable goimports
+        let g:go_fmt_command = "goimports"
+
+        " Syntastic
+        let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+        let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+        let g:go_list_type = "quickfix"
+
+
+    " }
+
 " }
 """"""""""
