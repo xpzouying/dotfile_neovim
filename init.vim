@@ -85,19 +85,19 @@
 
 """"""""""
 " Plugin config {
-    " " gruvbox {
-    "     colorscheme gruvbox
-    "     set background=dark     " default is light
-    "     " let g:gruvbox_termcolor=16    " default is 256
-    "     let g:gruvbox_italic=1
-    "     let g:gruvbox_bold=1
-    " " }
-
-    " solarized {
-        let g:solarized_termcolors=256
-        set background=light
-        colorscheme solarized
+    " gruvbox {
+        colorscheme gruvbox
+        set background=dark     " default is light
+        " let g:gruvbox_termcolor=16    " default is 256
+        let g:gruvbox_italic=1
+        let g:gruvbox_bold=1
     " }
+
+    " " solarized {
+    "     let g:solarized_termcolors=256
+    "     " set background=light
+    "     colorscheme solarized
+    " " }
 
 
     " vim-airline {
