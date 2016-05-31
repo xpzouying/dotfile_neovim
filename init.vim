@@ -48,6 +48,15 @@
 
 
 " Plugin - vim-plug{
+    " DoRmotePlugin {
+        function! DoRemotePlugin(arg)
+            UpdateRemotePlugins
+        endfunction
+
+    " }
+
+
+
     " Begin section
     call plug#begin(zynvimpathplugged)
     " call plug#begin('~/.config/nvim/plugged')
@@ -63,7 +72,8 @@
 
 
     " Plugs for everthing
-    Plug 'Shougo/deoplete.nvim'
+    Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemotePlugin') }
+
     Plug 'easymotion/vim-easymotion'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
@@ -126,6 +136,9 @@
         let g:deoplete#enable_at_startup=1
 
         set completeopt+=noselect
+        " automatically closing the scratch window. :pc, :pclose
+        autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
     " }
 
     " deoplete-go settings {
