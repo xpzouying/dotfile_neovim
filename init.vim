@@ -223,7 +223,7 @@
         let g:syntastic_python_checkers = ['pep8']
 
         " Enable goimports
-        let g:go_fmt_command = "goimports"
+        " let g:go_fmt_command = "goimports"
 
         " Syntastic
         let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
