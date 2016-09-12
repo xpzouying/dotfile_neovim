@@ -14,6 +14,7 @@
     set shiftwidth=4    " Use indents of 4 spaces
     set expandtab       " Tabs are spaces, not tabs
     set softtabstop=4   " Number of spaces that a <tab> represents
+    set shiftwidth=4
     " set smarttab
     set cursorline      " Highlight current line
     set nu              " Line numbers on
@@ -232,6 +233,11 @@
         let g:go_list_type = "quickfix"
 
 
+    " }
+
+    " jedi-vim {
+        " jedi override previous config
+        autocmd FileType python setlocal expandtab tabstop=4 shiftwidth=4
     " }
 
 " }
