@@ -68,8 +68,6 @@
 
     " Feel & Look
     Plug 'morhetz/gruvbox'
-    Plug 'w0ng/vim-hybrid'
-    Plug 'altercation/vim-colors-solarized'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
@@ -109,12 +107,6 @@
         let g:gruvbox_italic=1
         let g:gruvbox_bold=1
     " }
-
-    " " solarized {
-    "     let g:solarized_termcolors=256
-    "     " set background=light
-    "     colorscheme solarized
-    " " }
 
 
     " vim-airline {
