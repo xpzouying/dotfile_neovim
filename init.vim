@@ -24,6 +24,10 @@
 
     " With system clipboard
     " set clipboard=unnamedplus
+
+
+    " set neovim with true color
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " }
 
 
@@ -86,6 +90,8 @@
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'zchee/deoplete-go', { 'do': 'make'}
+    Plug 'pearofducks/ansible-vim'
+
     " Python
     Plug 'davidhalter/jedi-vim'
 
