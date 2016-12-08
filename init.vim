@@ -23,7 +23,7 @@
     set smartcase
 
     " With system clipboard
-    " set clipboard=unnamedplus
+    set clipboard+=unnamedplus
 
 
     " set neovim with true color
@@ -75,7 +75,17 @@
 
 
     " Plugs for everthing
-    Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemotePlugin') }
+    " Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemotePlugin') }
+    " Plug 'valloric/youcompleteme'
+    Plug 'valloric/youcompleteme', {  
+     \ 'build'      : {
+        \ 'mac'     : './install.sh --clang-completer --system-libclang --omnisharp-completer',
+        \ 'unix'    : './install.sh --clang-completer --system-libclang --omnisharp-completer',
+        \ 'windows' : './install.sh --clang-completer --system-libclang --omnisharp-completer',
+        \ 'cygwin'  : './install.sh --clang-completer --system-libclang --omnisharp-completer'
+        \ }
+     \ }
+    Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
     Plug 'easymotion/vim-easymotion'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -161,6 +171,14 @@
         " Move to word
         map  <Leader>w <Plug>(easymotion-bd-w)
         nmap <Leader>w <Plug>(easymotion-overwin-w)
+    " }
+
+    " { YouCompleteMe
+        " let g:ycm_global_ycm_extra_conf = '~/.config/nvim/plugged/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+        " let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
+        nnoremap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
+        " let g:ycm_confirm_extra_conf = 0
     " }
 
     " { fzf: Fuzzy file finder
