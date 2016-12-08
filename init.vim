@@ -93,6 +93,7 @@
 
 
     " Programming
+    Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'scrooloose/syntastic'
     Plug 'fatih/vim-go'
     Plug 'airblade/vim-gitgutter'
@@ -213,6 +214,11 @@
 
     " }
 
+    " Plug 'octol/vim-cpp-enhanced-highlight'
+        let g:cpp_class_scope_highlight = 1
+        let g:cpp_experimental_simple_template_highlight = 1
+        let g:cpp_concepts_highlight = 1
+    " }
 
     " syntastic recommanded settings {
         set statusline+=%#warningmsg#
