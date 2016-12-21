@@ -102,7 +102,7 @@
     Plug 'pearofducks/ansible-vim'
 
     " Python
-    Plug 'davidhalter/jedi-vim'
+    " Plug 'davidhalter/jedi-vim'
 
     call plug#end()
     " End plug
