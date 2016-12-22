@@ -264,5 +264,10 @@
         autocmd FileType python setlocal expandtab tabstop=4 shiftwidth=4
     " }
 
+    " HiCursorWords {
+        let g:HiCursorWords_delay=1000
+
+    " }
+
 " }
 """"""""""
