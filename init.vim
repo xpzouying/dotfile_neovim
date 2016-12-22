@@ -73,6 +73,8 @@
 
     Plug 'scrooloose/nerdtree'
 
+    " Highlight current words
+    Plug 'xpzouying/HiCursorWords'
 
     " Plugs for everthing
     " Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemotePlugin') }
@@ -99,7 +101,7 @@
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'zchee/deoplete-go', { 'do': 'make'}
-    Plug 'pearofducks/ansible-vim'
+    " Plug 'pearofducks/ansible-vim'
 
     " Python
     " Plug 'davidhalter/jedi-vim'
