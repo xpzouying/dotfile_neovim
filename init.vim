@@ -198,6 +198,7 @@
         " - window (nvim only)
         " let g:fzf_layout = { 'down': '~40%' }
 
+	" set rtp+=/usr/local/opt/fzf
 
         " Customize fzf colors to match your color scheme
         let g:fzf_colors =
