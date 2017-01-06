@@ -9,6 +9,8 @@
 
 
 " General {
+    set nocompatible
+    syntax on
     " set encoding=utf-8  " UTF8
     set tabstop=4       " Number of spaces that a <tab> represents in a file
     set shiftwidth=4    " Use indents of 4 spaces
