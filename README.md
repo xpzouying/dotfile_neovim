@@ -30,3 +30,7 @@
 1. gruvbox true color. Add following in .zshrc/.bashrc.
     source ~/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
 
+
+2. Quick look plugins
+    brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+
