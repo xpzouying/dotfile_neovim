@@ -100,7 +100,8 @@ zplug 'dracula/zsh', as:theme
 zplug 'joel-porquet/zsh-dircolors-solarized.git'
 
 # source plugins and add commands to $PATH
-zplug load  --verbose
+zplug load
+# zplug load  --verbose
 
 # --- end zplug ---
 
