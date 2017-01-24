@@ -52,7 +52,7 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew docker python tmux virtualenv)
+plugins=(git osx brew docker python tmux virtualenv ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,5 +125,5 @@ alias vim=nvim
 
 
 # start the ssh-agent in the background
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
+# eval "$(ssh-agent -s)"
+# ssh-add ~/.ssh/id_rsa
