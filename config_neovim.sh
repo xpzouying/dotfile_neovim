@@ -1,6 +1,11 @@
 #/bin/bash
 
 
+# Install vim-plugin manager
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
 NEOVIM_PATH="$HOME/.config/nvim"
 NEOVIM_PLUGGED_PATH=$NEOVIM_PATH"/plugged"
 
