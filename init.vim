@@ -81,16 +81,7 @@
 
     " Plugs for everthing
     Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemotePlugin') }
-    " Plug 'valloric/youcompleteme'
-    " Plug 'valloric/youcompleteme', {  
-    "  \ 'build'      : {
-    "     \ 'mac'     : './install.sh --clang-completer --system-libclang --omnisharp-completer',
-    "     \ 'unix'    : './install.sh --clang-completer --system-libclang --omnisharp-completer',
-    "     \ 'windows' : './install.sh --clang-completer --system-libclang --omnisharp-completer',
-    "     \ 'cygwin'  : './install.sh --clang-completer --system-libclang --omnisharp-completer'
-    "     \ }
-    "  \ }
-    " Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+    Plug 'zchee/deoplete-go', { 'do': 'make'}
 
     Plug 'easymotion/vim-easymotion'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -103,7 +94,6 @@
     Plug 'fatih/vim-go'
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
-    Plug 'zchee/deoplete-go', { 'do': 'make'}
     " Plug 'pearofducks/ansible-vim'
 
     " Python
