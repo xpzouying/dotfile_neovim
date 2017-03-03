@@ -7,8 +7,10 @@ export ZSH=/Users/zouying/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 # ZSH_THEME="dracula"
+# ZSH_THEME="solarized-powerline"
+# ZSH_THEME="oh-my-zsh-solarized-powerline-theme"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +54,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew docker python tmux virtualenv ssh-agent pylint)
+plugins=(git osx brew docker python tmux virtualenv ssh-agent pylint zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,7 +90,7 @@ fi
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # Can manage local plugins
-zplug "~/.zsh", from:local
+# zplug "~/.zsh", from:local
 
 
 # Enhance plugins
@@ -96,12 +98,33 @@ zplug "supercrabtree/k"
 
 
 # Load theme file
-zplug 'dracula/zsh', as:theme
-zplug 'joel-porquet/zsh-dircolors-solarized.git'
+# zplug 'dracula/zsh', as:theme
+zplug 'KuoE0/oh-my-zsh-solarized-powerline-theme', as:theme
+
+zplug "seebi/dircolors-solarized", ignore:"*", as:plugin
 
 # source plugins and add commands to $PATH
 zplug load
 # zplug load  --verbose
+
+
+# --- config ---
+# dircolors
+eval `gdircolors $ZPLUG_HOME/repos/seebi/dircolors-solarized/dircolors.256dark`
+
+# sindresorhus/pure
+zplug mafredri/zsh-async, from:github
+zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
+
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
 
 # --- end zplug ---
 
