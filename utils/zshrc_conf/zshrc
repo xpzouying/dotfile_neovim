@@ -7,8 +7,8 @@ export ZSH=/Users/zouying/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="dracula"
+ZSH_THEME="robbyrussell"
+# ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +52,7 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew docker python tmux virtualenv ssh-agent)
+plugins=(git osx brew docker python tmux virtualenv ssh-agent pylint)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,8 +116,8 @@ zplug load
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/src/GOPATH
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin/
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
