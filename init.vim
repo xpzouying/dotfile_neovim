@@ -71,6 +71,7 @@
     " Feel & Look
     Plug 'morhetz/gruvbox'
     Plug 'dracula/vim'  " color for dracula
+    Plug 'joshdick/onedark.vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
@@ -114,14 +115,19 @@
     """     let g:gruvbox_bold=1
     """ " }
 
-    " dracula/vim {
-        color dracula
+    """ " dracula/vim {
+    """     color dracula
+    """ " }
+
+    " joshdick/onedark {
+        colorscheme onedark
     " }
 
 
     " vim-airline {
         set laststatus=2
-        let g:airline_theme='gruvbox'
+        " let g:airline_theme='gruvbox'
+        let g:airline_theme='onedark'  " depends on onedark
         let g:airline#extensions#branch#enabled=1
         " let g:airline#extension#syntastic#enabled=1
         let g:airline_powerline_fonts=1

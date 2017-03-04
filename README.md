@@ -34,3 +34,9 @@
 2. Quick look plugins
     brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
+3. Colors not working in terminal. Add these in `~/.bashrc` or `~/.zshrc`
+    >```bash
+    > export CLICOLOR=1
+    > export LSCOLORS=ExFxBxDxCxegedabagacad
+    >```
+

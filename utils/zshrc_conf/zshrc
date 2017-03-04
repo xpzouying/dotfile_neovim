@@ -121,9 +121,6 @@ zplug "plugins/github", from:oh-my-zsh
 
 
 
-# source plugins and add commands to $PATH
-zplug load
-# zplug load  --verbose
 
 # zplug check returns true if the given repository exists
 if zplug check b4b4r07/enhancd; then
@@ -136,6 +133,10 @@ fi
 # dircolors
 eval `gdircolors $ZPLUG_HOME/repos/seebi/dircolors-solarized/dircolors.256dark`
 
+
+# source plugins and add commands to $PATH
+zplug load
+# zplug load  --verbose
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -157,6 +158,11 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+# enable colors
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
 
 export GOPATH=$HOME/src/GOPATH
