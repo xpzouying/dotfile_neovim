@@ -9,8 +9,7 @@ export ZSH=/Users/zouying/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="dracula"
-# ZSH_THEME="solarized-powerline"
-# ZSH_THEME="oh-my-zsh-solarized-powerline-theme"
+# ZSH_THEME="josh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,7 +53,7 @@ export ZSH=/Users/zouying/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew docker python tmux virtualenv ssh-agent pylint zsh-syntax-highlighting)
+plugins=(git osx brew docker python tmux virtualenv ssh-agent pylint)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,29 +91,50 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # Can manage local plugins
 # zplug "~/.zsh", from:local
 
+# enhanced
+zplug "b4b4r07/enhancd", use:init.sh
 
 # Enhance plugins
+zplug "zsh-users/zsh-history-substring-search"
+
 zplug "supercrabtree/k"
+
+# Grab binaries from GitHub Releases
+# and rename with the "rename-to:" tag
+zplug "junegunn/fzf-bin", \
+    from:gh-r, \
+    as:command, \
+    rename-to:fzf, \
+    use:"*darwin*amd64*"
 
 
 # Load theme file
-# zplug 'dracula/zsh', as:theme
-zplug 'KuoE0/oh-my-zsh-solarized-powerline-theme', as:theme
+zplug "dracula/zsh", as:theme
+zplug "chrissicool/zsh-256color"
+# zplug 'KuoE0/oh-my-zsh-solarized-powerline-theme', as:theme
 
 zplug "seebi/dircolors-solarized", ignore:"*", as:plugin
+
+# Supports oh-my-zsh plugins and the like
+zplug "plugins/git",   from:oh-my-zsh
+zplug "plugins/github", from:oh-my-zsh
+
+
 
 # source plugins and add commands to $PATH
 zplug load
 # zplug load  --verbose
 
+# zplug check returns true if the given repository exists
+if zplug check b4b4r07/enhancd; then
+    # setting if enhancd is available
+    export ENHANCD_FILTER=fzf-tmux
+fi
+
 
 # --- config ---
 # dircolors
 eval `gdircolors $ZPLUG_HOME/repos/seebi/dircolors-solarized/dircolors.256dark`
-
-# sindresorhus/pure
-zplug mafredri/zsh-async, from:github
-zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
 
 # Install plugins if there are plugins that have not been installed
