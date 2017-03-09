@@ -91,9 +91,6 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # Can manage local plugins
 # zplug "~/.zsh", from:local
 
-# enhanced
-zplug "b4b4r07/enhancd", use:init.sh
-
 # Enhance plugins
 zplug "zsh-users/zsh-history-substring-search"
 
@@ -123,10 +120,10 @@ zplug "plugins/github", from:oh-my-zsh
 
 
 # zplug check returns true if the given repository exists
-if zplug check b4b4r07/enhancd; then
-    # setting if enhancd is available
-    export ENHANCD_FILTER=fzf-tmux
-fi
+# if zplug check b4b4r07/enhancd; then
+#     # setting if enhancd is available
+#     export ENHANCD_FILTER=fzf-tmux
+# fi
 
 
 # --- config ---
