@@ -173,3 +173,7 @@ alias vim=nvim
 # start the ssh-agent in the background
 # eval "$(ssh-agent -s)"
 # ssh-add ~/.ssh/id_rsa
+
+
+# brew-bottles
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
