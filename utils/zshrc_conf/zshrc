@@ -167,7 +167,8 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin/
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias vim=nvim
+# use vim or neovim
+# alias vim=nvim
 
 
 # start the ssh-agent in the background
