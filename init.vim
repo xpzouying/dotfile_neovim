@@ -25,7 +25,8 @@
     set smartcase
 
     " With system clipboard
-    set clipboard+=unnamedplus
+    " set clipboard+=unnamedplus
+    set clipboard+=unnamed
 
 
     " set neovim with true color
