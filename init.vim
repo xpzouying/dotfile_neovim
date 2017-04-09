@@ -73,6 +73,8 @@
     Plug 'morhetz/gruvbox'
     Plug 'dracula/vim'  " color for dracula
     Plug 'joshdick/onedark.vim'
+    Plug 'chriskempson/base16-vim'
+
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
@@ -120,8 +122,12 @@
     """     color dracula
     """ " }
 
-    " joshdick/onedark {
-        colorscheme onedark
+    """ " joshdick/onedark {
+    """     colorscheme onedark
+    """ " }
+
+    " base16 {
+        let base16colorspace=256
     " }
 
 
