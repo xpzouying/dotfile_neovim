@@ -40,3 +40,11 @@
     > export LSCOLORS=ExFxBxDxCxegedabagacad
     >```
 
+4. DNS for github
+    > # Github
+    > # beijing port
+    > 151.101.72.133  assets-cdn.github.com
+    > 151.101.72.249  github.global.ssl.fastly.net
+    > # hong kong
+    > 151.101.76.133  assets-cdn.github.com
+    > 151.101.76.249  github.global.ssl.fastly.net
