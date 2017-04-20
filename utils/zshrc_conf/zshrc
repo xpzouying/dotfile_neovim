@@ -10,7 +10,8 @@ export ZSH=/Users/zouying/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="dracula"
 # ZSH_THEME="josh"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+ZSH_THEME="intheloop"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
