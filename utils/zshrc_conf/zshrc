@@ -10,6 +10,7 @@ export ZSH=/Users/zouying/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="dracula"
 # ZSH_THEME="josh"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -106,7 +107,7 @@ zplug "junegunn/fzf-bin", \
 
 
 # Load theme file
-zplug "dracula/zsh", as:theme
+# zplug "dracula/zsh", as:theme
 zplug "chrissicool/zsh-256color"
 # zplug 'KuoE0/oh-my-zsh-solarized-powerline-theme', as:theme
 
@@ -178,3 +179,9 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin/
 
 # brew-bottles
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+#Add anaconda
+export PATH=$PATH:$HOME/anaconda/bin/
