@@ -186,3 +186,10 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 #Add anaconda
 export PATH=$PATH:$HOME/anaconda/bin/
+
+
+# GTest
+export CPLUS_INCLUDE_PATH=/usr/local/include
+export LIBRARY_PATH=/usr/local/lib
+
+
