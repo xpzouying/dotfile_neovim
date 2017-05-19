@@ -35,16 +35,16 @@
     brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 3. Colors not working in terminal. Add these in `~/.bashrc` or `~/.zshrc`
-    >```bash
-    > export CLICOLOR=1
-    > export LSCOLORS=ExFxBxDxCxegedabagacad
-    >```
+```bash
+export CLICOLOR=1  
+export LSCOLORS=ExFxBxDxCxegedabagacad  
+```
 
 4. DNS for github
-    > # Github
-    > # beijing port
-    > 151.101.72.133  assets-cdn.github.com
-    > 151.101.72.249  github.global.ssl.fastly.net
-    > # hong kong
-    > 151.101.76.133  assets-cdn.github.com
-    > 151.101.76.249  github.global.ssl.fastly.net
+**Github**  
+**beijing port**  
+151.101.72.133  assets-cdn.github.com   
+151.101.72.249  github.global.ssl.fastly.net  
+**hong kong**  
+151.101.76.133  assets-cdn.github.com  
+151.101.76.249  github.global.ssl.fastly.net  
