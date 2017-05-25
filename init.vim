@@ -97,7 +97,7 @@
     " Programming
     Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'scrooloose/syntastic'
-    Plug 'fatih/vim-go'
+    Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     " Plug 'pearofducks/ansible-vim'
