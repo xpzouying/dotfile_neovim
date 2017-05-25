@@ -177,9 +177,12 @@
         let g:go_highlight_types = 1
         let g:go_highlight_operators = 1
         let g:go_highlight_build_constraints = 1
+        let g:go_highlight_extra_types = 1
 
         " Enable goimports to automatically insert import paths instead of gofmt
         let g:go_fmt_command = "goimports"
+
+        let g:go_textobj_include_function_doc = 1
 
     " }
 
