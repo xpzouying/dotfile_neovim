@@ -72,10 +72,11 @@
     " call plug#begin('~/.config/nvim/plugged')
 
     " Feel & Look
-    Plug 'morhetz/gruvbox'
-    Plug 'dracula/vim'  " color for dracula
-    Plug 'joshdick/onedark.vim'
-    Plug 'chriskempson/base16-vim'
+    " Plug 'morhetz/gruvbox'
+    " Plug 'dracula/vim'  " color for dracula
+    " Plug 'joshdick/onedark.vim'
+    " Plug 'chriskempson/base16-vim'
+    Plug 'fatih/molokai'
 
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -128,10 +129,15 @@
     """     colorscheme onedark
     """ " }
 
-    " base16 {
-        let base16colorspace=256
-    " }
+    """ " base16 {
+    """     let base16colorspace=256
+    """ " }
 
+    " fatih/molokai {
+        let g:rehash256 = 1
+        let g:molokai_original = 1
+        colorscheme molokai
+    " }
 
     " vim-airline {
         set laststatus=2
